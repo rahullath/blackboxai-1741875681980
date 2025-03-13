@@ -1,0 +1,8 @@
+2025-03-13 14:12:44,198 - INFO - Fetching data for aave
+2025-03-13 14:12:44,198 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 14:12:44,340 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 14:12:44,919 - ERROR - Unexpected error during execution: unsupported operand type(s) for +=: 'int' and 'list'
+2025-03-13 14:14:11,732 - INFO - Fetching data for aave
+2025-03-13 14:14:11,732 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 14:14:11,871 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 14:14:11,900 - ERROR - Unexpected error during execution: unsupported operand type(s) for +=: 'int' and 'dict'
