@@ -1,0 +1,250 @@
+{
+  "timestamp": "2025-03-13T17:03:54.407968",
+  "protocols": {
+    "aave": {
+      "versions": {
+        "aave": {
+          "name": "AAVE",
+          "symbol": "AAVE",
+          "chains": [],
+          "tvl": {
+            "date": 1741883625,
+            "totalLiquidityUSD": 17015577121.141218
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": 2548466994.0959153
+        },
+        "aave-v2": {
+          "name": "AAVE V2",
+          "symbol": "AAVE",
+          "chains": [
+            "Ethereum",
+            "Polygon",
+            "Avalanche"
+          ],
+          "tvl": {
+            "date": 1741881503,
+            "totalLiquidityUSD": 338539804.24957
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": 2537791857.197899
+        },
+        "aave-v3": {
+          "name": "AAVE V3",
+          "symbol": "AAVE",
+          "chains": [
+            "Ethereum",
+            "Scroll",
+            "Linea",
+            "Binance",
+            "Polygon",
+            "Fantom",
+            "Arbitrum",
+            "Optimism",
+            "Avalanche",
+            "Metis",
+            "Harmony",
+            "Sonic",
+            "Base",
+            "xDai",
+            "zkSync Era"
+          ],
+          "tvl": {
+            "date": 1741880531,
+            "totalLiquidityUSD": 16666850453.62316
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": null
+        }
+      },
+      "aggregated": {
+        "tvl": 39246613038.01395,
+        "fees": 0.0,
+        "revenue": 0.0
+      }
+    },
+    "compound": {
+      "versions": {
+        "compound-v1": {
+          "name": "Compound V1",
+          "symbol": "COMP",
+          "chains": [
+            "Ethereum"
+          ],
+          "tvl": {
+            "date": 1741881371,
+            "totalLiquidityUSD": 2479190.21771
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": null
+        },
+        "compound-v2": {
+          "name": "Compound V2",
+          "symbol": "COMP",
+          "chains": [
+            "Ethereum"
+          ],
+          "tvl": {
+            "date": 1741883891,
+            "totalLiquidityUSD": 452790905.54238
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": null
+        },
+        "compound-v3": {
+          "name": "Compound V3",
+          "symbol": "COMP",
+          "chains": [
+            "Ethereum",
+            "Mantle",
+            "Arbitrum",
+            "Scroll",
+            "Base",
+            "Polygon",
+            "Optimism"
+          ],
+          "tvl": {
+            "date": 1741871051,
+            "totalLiquidityUSD": 1809414626.52637
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": null
+        }
+      },
+      "aggregated": {
+        "tvl": 7490321035.28646,
+        "fees": 0.0,
+        "revenue": 0.0
+      }
+    },
+    "lido": {
+      "versions": {
+        "lido": {
+          "name": "Lido",
+          "symbol": "LDO",
+          "chains": [
+            "Terra",
+            "Moonriver",
+            "Ethereum",
+            "Moonbeam",
+            "Solana"
+          ],
+          "tvl": {
+            "date": 1741880651,
+            "totalLiquidityUSD": 17517755744.98383
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": 807483957.7185061
+        }
+      },
+      "aggregated": {
+        "tvl": 19259636395.98383,
+        "fees": 0.0,
+        "revenue": 0.0
+      }
+    },
+    "fluid": {
+      "versions": {
+        "fluid": {
+          "name": "Fluid",
+          "symbol": null,
+          "chains": [],
+          "tvl": {
+            "date": 1741885499,
+            "totalLiquidityUSD": 794516296.55156
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": 191911294.232866
+        },
+        "fluid-lending": {
+          "name": "Fluid Lending",
+          "symbol": "-",
+          "chains": [
+            "Ethereum",
+            "Base",
+            "Arbitrum",
+            "Polygon"
+          ],
+          "tvl": {
+            "date": 1741880651,
+            "totalLiquidityUSD": 796728972.83074
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": null
+        }
+      },
+      "aggregated": {
+        "tvl": 5075011419.382299,
+        "fees": 0.0,
+        "revenue": 0.0
+      }
+    },
+    "jupiter": {
+      "versions": {
+        "jupiter": {
+          "name": "Jupiter",
+          "symbol": "JUP",
+          "chains": [],
+          "tvl": {
+            "date": 1741885493,
+            "totalLiquidityUSD": 1968709077.5208201
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": 1332848785.5795004
+        },
+        "jupiter-aggregator": {
+          "name": "Jupiter Aggregator",
+          "symbol": "JUP",
+          "chains": [
+            "Solana"
+          ],
+          "tvl": {
+            "date": 1697068800,
+            "totalLiquidityUSD": 0
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": 1332848785.5795004
+        }
+      },
+      "aggregated": {
+        "tvl": 5407663370.520821,
+        "fees": 0.0,
+        "revenue": 0.0
+      }
+    },
+    "sonic": {
+      "versions": {
+        "sonic": {
+          "name": "Sonic",
+          "symbol": "SONIC",
+          "chains": [
+            "ICP"
+          ],
+          "tvl": {
+            "date": 1741881695,
+            "totalLiquidityUSD": 2131183.37539
+          },
+          "fees": 0.0,
+          "revenue": 0.0,
+          "mcap": 0
+        }
+      },
+      "aggregated": {
+        "tvl": 1744012878.37539,
+        "fees": 0.0,
+        "revenue": 0.0
+      }
+    }
+  }
+}

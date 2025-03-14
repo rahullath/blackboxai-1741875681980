@@ -17,7 +17,7 @@ logging.basicConfig(
 
 class DataProcessor:
     def __init__(self):
-        self.raw_data_path = 'data/raw/protocol_data.json'
+        self.raw_data_path = r'C:\Users\rahul\blackboxai-1741875681980\defi-dashboard\data\raw\protocol_data.json'
         self.processed_data_path = 'data/processed/processed_data.json'
         
         # Ensure processed directory exists
@@ -55,7 +55,8 @@ class DataProcessor:
         """
         processed_data = {
             "timestamp": datetime.utcnow().isoformat(),
-            "protocols": []
+            "protocols": [],
+            "chains": {}
         }
 
         for protocol_name, protocol_data in raw_data["protocols"].items():
@@ -74,92 +75,125 @@ class DataProcessor:
                     "tvl": aggregated["tvl"],
                     "fees": aggregated["fees"],
                     "revenue": aggregated["revenue"],
-                    "marketCap": main_version.get("mcap", 0)  # Default to 0 if not available
-                }
+                    "marketCap": main_version.get("mcap", 0),
+                    "qoq_growth": self.calculate_qoq_growth(protocol_data["monthly_revenue"])
+                },
+                "monthly_revenue": self.aggregate_monthly_revenue(protocol_data["monthly_revenue"])
             }
-            
+
             processed_data["protocols"].append(protocol_info)
+
+        for chain_name, chain_data in raw_data["chains"].items():
+            processed_data["chains"][chain_name] = {
+                "monthly_revenue": self.aggregate_chain_revenue(chain_data["monthly_revenue"])
+            }
 
         return processed_data
 
-    def calculate_qoq_growth(self, protocols: List[Dict]) -> List[Dict]:
+    def aggregate_monthly_revenue(self, monthly_revenue: Dict) -> Dict:
         """
-        Calculate quarter-over-quarter revenue growth for each protocol.
+        Aggregate monthly revenue data from all versions of a protocol or chain.
         
         Args:
-            protocols (List[Dict]): List of protocol data
+            monthly_revenue (Dict): Monthly revenue data for all versions
             
         Returns:
-            List[Dict]: Protocol data with QoQ growth metrics added
+            Dict: Aggregated monthly revenue data
         """
-        for protocol in protocols:
-            current_revenue = protocol["metrics"]["revenue"]
-            
-            # In a real implementation, we would fetch historical data
-            # For now, we'll use a placeholder calculation
-            protocol["metrics"]["qoq_growth"] = 0.0
-            
-        return protocols
+        aggregated_revenue = {}
+        if isinstance(monthly_revenue, dict):
+            for version_revenue in monthly_revenue.values():
+                if isinstance(version_revenue, dict):
+                    for month, revenue in version_revenue.items():
+                        if month not in aggregated_revenue:
+                            aggregated_revenue[month] = 0
+                        aggregated_revenue[month] += revenue
+                elif isinstance(version_revenue, (int, float)):
+                    aggregated_revenue = version_revenue
+        return aggregated_revenue
 
-    def rank_protocols(self, protocols: List[Dict]) -> List[Dict]:
+    def aggregate_chain_revenue(self, monthly_revenue: Dict) -> Dict:
         """
-        Rank protocols by market cap and ensure Sonic is included.
+        Aggregate chain revenue data considering only data until February 2025.
+        If not available, use the last 30 days' data multiplied by 12.
         
         Args:
-            protocols (List[Dict]): List of protocol data
+            monthly_revenue (Dict): Monthly revenue data for the chain
             
         Returns:
-            List[Dict]: Top 5 protocols by market cap (including Sonic)
+            Dict: Aggregated chain revenue data
         """
-        # Sort protocols by market cap
-        sorted_protocols = sorted(
-            protocols,
-            key=lambda x: x["metrics"]["marketCap"],
-            reverse=True
-        )
-        
-        # Get top 5 protocols
-        top_protocols = sorted_protocols[:5]
-        
-        # Check if Sonic is in top 5, if not add it
-        sonic_protocol = next(
-            (p for p in protocols if p["name"].lower() == "sonic"),
-            None
-        )
-        
-        if sonic_protocol and sonic_protocol not in top_protocols:
-            top_protocols.append(sonic_protocol)
-            
-        return top_protocols
+        relevant_months = [f"{year}-{month:02d}" for year in range(2024, 2026) for month in range(1, 13)]
+        relevant_months = relevant_months[1:13]  # Only include months from February 2024 to February 2025
+        filtered_revenue = {month: monthly_revenue.get(month, 0) for month in relevant_months}
 
-    def process_data(self) -> None:
-        """Process the raw data and save the results."""
+        # If not enough data, use the last 30 days' data multiplied by 12
+        if sum(filtered_revenue.values()) == 0:
+            last_30_days_revenue = sum(list(monthly_revenue.values())[-1:])
+            annualized_revenue = last_30_days_revenue * 12
+            filtered_revenue = {f"{datetime.utcnow().year}-{i:02d}": annualized_revenue / 12 for i in range(1, 13)}
+
+        return filtered_revenue
+
+    def calculate_qoq_growth(self, monthly_revenue: Dict) -> float:
+        """
+        Calculate the quarter-over-quarter (QoQ) growth rate from monthly revenue data.
+        
+        Args:
+            monthly_revenue (Dict): Monthly revenue data
+            
+        Returns:
+            float: QoQ growth rate
+        """
+        # Aggregate monthly revenue across all versions
+        aggregated_revenue = self.aggregate_monthly_revenue(monthly_revenue)
+        
+        # Extract the last 12 months of revenue data
+        sorted_months = sorted(aggregated_revenue.keys(), reverse=True)
+        if len(sorted_months) < 12:
+            return 0.0
+        
+        def get_quarter_revenue(months):
+            revenue = sum(aggregated_revenue.get(month, 0) for month in months)
+            if revenue == 0:
+                # If no data for the quarter, use last 30 days' data multiplied by 4
+                last_30_days_revenue = sum(list(aggregated_revenue.values())[-1:])
+                revenue = last_30_days_revenue * 4
+            return revenue
+
+        last_quarter_months = sorted_months[:3]
+        previous_quarter_months = sorted_months[3:6]
+
+        last_quarter = get_quarter_revenue(last_quarter_months)
+        previous_quarter = get_quarter_revenue(previous_quarter_months)
+        
+        if previous_quarter == 0:
+            return 0.0
+        
+        return (last_quarter - previous_quarter) / previous_quarter
+
+    def save_processed_data(self, data: Dict):
+        """
+        Save the processed data to a JSON file.
+        
+        Args:
+            data (Dict): Data to save
+        """
         try:
-            # Load raw data
-            raw_data = self.load_raw_data()
-            
-            # Process protocol data
-            processed_data = self.process_protocol_data(raw_data)
-            
-            # Calculate QoQ growth
-            processed_data["protocols"] = self.calculate_qoq_growth(
-                processed_data["protocols"]
-            )
-            
-            # Rank protocols and ensure Sonic is included
-            processed_data["protocols"] = self.rank_protocols(
-                processed_data["protocols"]
-            )
-            
-            # Save processed data
             with open(self.processed_data_path, 'w') as f:
-                json.dump(processed_data, f, indent=2)
-                
-            logging.info(f"Processed data saved to {self.processed_data_path}")
+                json.dump(data, f, indent=2)
+            logging.info(f"Processed data successfully saved to {self.processed_data_path}")
             
-        except Exception as e:
-            logging.error(f"Error processing data: {str(e)}")
-            raise
+        except IOError as e:
+            logging.error(f"Error saving processed data: {str(e)}")
+
+    def process_data(self):
+        """
+        Load raw data, process it, and save the processed data.
+        """
+        raw_data = self.load_raw_data()
+        processed_data = self.process_protocol_data(raw_data)
+        self.save_processed_data(processed_data)
 
 def main():
     """Main execution function."""

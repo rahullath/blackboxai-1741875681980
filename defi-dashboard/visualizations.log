@@ -1,0 +1,87 @@
+2025-03-13 22:42:45,218 - ERROR - Processed data file not found: data/processed/processed_data.json
+2025-03-13 22:42:45,218 - ERROR - Error creating dashboard: [Errno 2] No such file or directory: 'data/processed/processed_data.json'
+2025-03-13 22:42:45,218 - ERROR - Unexpected error during execution: [Errno 2] No such file or directory: 'data/processed/processed_data.json'
+2025-03-13 22:47:50,209 - ERROR - Processed data file not found: data/processed/processed_data.json
+2025-03-13 22:47:50,209 - ERROR - Unexpected error during execution: [Errno 2] No such file or directory: 'data/processed/processed_data.json'
+2025-03-13 22:52:49,704 - INFO - Processed data loaded successfully
+2025-03-13 22:52:50,932 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-13 22:52:50,935 - INFO - Dashboard creation completed successfully
+2025-03-14 00:58:22,274 - INFO - Processed data loaded successfully
+2025-03-14 00:58:23,079 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 00:58:23,082 - INFO - Dashboard creation completed successfully
+2025-03-14 15:16:15,821 - INFO - Processed data loaded successfully
+2025-03-14 15:16:17,563 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:16:17,564 - INFO - Dashboard creation completed successfully
+2025-03-14 15:24:07,190 - INFO - Processed data loaded successfully
+2025-03-14 15:24:07,696 - ERROR - Unexpected error during execution: 'monthly_revenue'
+2025-03-14 15:26:55,428 - INFO - Processed data loaded successfully
+2025-03-14 15:26:56,279 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:26:56,280 - INFO - Dashboard creation completed successfully
+2025-03-14 15:31:07,371 - INFO - Processed data loaded successfully
+2025-03-14 15:31:08,414 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:31:08,415 - INFO - Dashboard creation completed successfully
+2025-03-14 15:37:21,105 - INFO - Processed data loaded successfully
+2025-03-14 15:37:21,786 - ERROR - Unexpected error during execution: max() arg is an empty sequence
+2025-03-14 15:39:45,002 - INFO - Processed data loaded successfully
+2025-03-14 15:39:45,952 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:39:45,953 - INFO - Dashboard creation completed successfully
+2025-03-14 15:43:40,451 - INFO - Processed data loaded successfully
+2025-03-14 15:43:41,401 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:43:41,401 - INFO - Dashboard creation completed successfully
+2025-03-14 15:44:08,842 - INFO - Processed data loaded successfully
+2025-03-14 15:44:09,751 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:44:09,752 - INFO - Dashboard creation completed successfully
+2025-03-14 15:46:42,971 - INFO - Processed data loaded successfully
+2025-03-14 15:46:44,141 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:46:44,141 - INFO - Dashboard creation completed successfully
+2025-03-14 15:50:34,291 - INFO - Processed data loaded successfully
+2025-03-14 15:50:35,384 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:50:35,384 - INFO - Dashboard creation completed successfully
+2025-03-14 15:52:09,072 - INFO - Processed data loaded successfully
+2025-03-14 15:52:10,031 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 15:52:10,037 - INFO - Dashboard creation completed successfully
+2025-03-14 16:04:13,811 - INFO - Processed data loaded successfully
+2025-03-14 16:04:14,550 - ERROR - Unexpected error during execution: 'int' object has no attribute 'values'
+2025-03-14 16:05:40,917 - INFO - Processed data loaded successfully
+2025-03-14 16:05:42,226 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 16:05:42,231 - INFO - Dashboard creation completed successfully
+2025-03-14 16:26:46,498 - INFO - Processed data loaded successfully
+2025-03-14 16:26:47,317 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 16:26:47,317 - INFO - Rank 1: Maker - FDV/Annualized Revenue Ratio: 2.99
+2025-03-14 16:26:47,317 - INFO - Rank 2: Lido - FDV/Annualized Revenue Ratio: 9.75
+2025-03-14 16:26:47,317 - INFO - Rank 3: AAVE - FDV/Annualized Revenue Ratio: 14.54
+2025-03-14 16:26:47,317 - INFO - Rank 4: Jupiter - FDV/Annualized Revenue Ratio: 21.14
+2025-03-14 16:26:47,317 - INFO - Rank 5: Fluid - FDV/Annualized Revenue Ratio: 73.36
+2025-03-14 16:26:47,317 - INFO - Dashboard creation completed successfully
+2025-03-14 16:39:39,531 - INFO - Processed data loaded successfully
+2025-03-14 16:39:40,106 - ERROR - Unexpected error during execution: The (row, col) pair sent is out of range. Use Figure.print_grid to view the subplot grid. 
+2025-03-14 16:41:25,918 - INFO - Processed data loaded successfully
+2025-03-14 16:41:26,519 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 16:41:26,519 - INFO - Dashboard creation completed successfully
+2025-03-14 16:45:29,092 - INFO - Processed data loaded successfully
+2025-03-14 16:45:29,673 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 16:45:29,673 - INFO - Dashboard creation completed successfully
+2025-03-14 16:57:33,830 - INFO - Processed data loaded successfully
+2025-03-14 16:57:34,403 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 16:57:34,403 - INFO - Dashboard creation completed successfully
+2025-03-14 17:01:23,394 - INFO - Processed data loaded successfully
+2025-03-14 17:01:24,042 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 17:01:24,042 - INFO - Dashboard creation completed successfully
+2025-03-14 17:06:09,177 - INFO - Processed data loaded successfully
+2025-03-14 17:06:09,793 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 17:06:09,793 - INFO - Dashboard creation completed successfully
+2025-03-14 17:06:55,630 - INFO - Processed data loaded successfully
+2025-03-14 17:06:56,311 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 17:06:56,311 - INFO - Dashboard creation completed successfully
+2025-03-14 17:09:29,214 - INFO - Processed data loaded successfully
+2025-03-14 17:09:29,922 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 17:09:29,922 - INFO - Dashboard creation completed successfully
+2025-03-14 17:14:28,987 - INFO - Processed data loaded successfully
+2025-03-14 17:14:29,641 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 17:14:29,641 - INFO - Dashboard creation completed successfully
+2025-03-14 17:18:00,949 - INFO - Processed data loaded successfully
+2025-03-14 17:18:01,702 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 17:18:01,702 - INFO - Dashboard creation completed successfully
+2025-03-14 17:19:45,925 - INFO - Processed data loaded successfully
+2025-03-14 17:19:46,606 - INFO - Dashboard successfully created at visualizations/output\defi_dashboard.html
+2025-03-14 17:19:46,606 - INFO - Dashboard creation completed successfully

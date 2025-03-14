@@ -1,0 +1,72 @@
+2025-03-13 22:08:52,875 - INFO - Fetching data for aave
+2025-03-13 22:08:52,875 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:08:57,748 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:08:58,842 - ERROR - Unexpected error during execution: name 'protocol_metrics' is not defined
+2025-03-13 22:18:22,985 - INFO - Fetching data for aave
+2025-03-13 22:18:22,985 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:18:27,104 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:18:27,226 - ERROR - Unexpected error during execution: unsupported operand type(s) for +=: 'int' and 'dict'
+2025-03-13 22:21:57,541 - INFO - Fetching data for aave
+2025-03-13 22:21:57,541 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:21:58,625 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:21:58,666 - ERROR - Unexpected error during execution: float() argument must be a string or a real number, not 'dict'
+2025-03-13 22:24:38,982 - INFO - Fetching data for aave
+2025-03-13 22:24:38,982 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:24:43,058 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:24:43,100 - ERROR - Unexpected error during execution: float() argument must be a string or a real number, not 'dict'
+2025-03-13 22:27:16,198 - INFO - Fetching data for aave
+2025-03-13 22:27:16,198 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:27:19,093 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:27:19,151 - ERROR - Unexpected error during execution: float() argument must be a string or a real number, not 'dict'
+2025-03-13 22:31:02,816 - INFO - Fetching data for aave
+2025-03-13 22:31:02,816 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:31:04,859 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:31:04,928 - ERROR - Unexpected error during execution: float() argument must be a string or a real number, not 'dict'
+2025-03-13 22:33:22,362 - INFO - Fetching data for aave
+2025-03-13 22:33:22,362 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:33:23,593 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:33:23,634 - ERROR - Unexpected error during execution: float() argument must be a string or a real number, not 'dict'
+2025-03-13 22:33:54,407 - INFO - Fetching data for aave
+2025-03-13 22:33:54,407 - INFO - Fetching data from: https://api.llama.fi/protocol/aave
+2025-03-13 22:33:57,998 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave
+2025-03-13 22:33:58,043 - INFO - Fetching data for aave-v2
+2025-03-13 22:33:58,044 - INFO - Fetching data from: https://api.llama.fi/protocol/aave-v2
+2025-03-13 22:34:03,697 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave-v2
+2025-03-13 22:34:04,089 - INFO - Fetching data for aave-v3
+2025-03-13 22:34:04,089 - INFO - Fetching data from: https://api.llama.fi/protocol/aave-v3
+2025-03-13 22:34:08,442 - INFO - Fetching data from: https://api.llama.fi/summary/fees/aave-v3
+2025-03-13 22:34:09,742 - INFO - Fetching data for compound-finance
+2025-03-13 22:34:09,742 - INFO - Fetching data from: https://api.llama.fi/protocol/compound-finance
+2025-03-13 22:34:26,607 - ERROR - Error fetching /protocol/compound-finance: Unterminated string starting at: line 1 column 2685770 (char 2685769)
+2025-03-13 22:34:26,625 - ERROR - Failed to fetch data for compound-finance
+2025-03-13 22:34:26,625 - INFO - Fetching data for compound-v1
+2025-03-13 22:34:26,625 - INFO - Fetching data from: https://api.llama.fi/protocol/compound-v1
+2025-03-13 22:34:28,768 - INFO - Fetching data from: https://api.llama.fi/summary/fees/compound-v1
+2025-03-13 22:34:29,717 - ERROR - Error fetching /summary/fees/compound-v1: 404 Client Error: Not Found for url: https://api.llama.fi/summary/fees/compound-v1
+2025-03-13 22:34:29,720 - INFO - Fetching data for compound-v2
+2025-03-13 22:34:29,720 - INFO - Fetching data from: https://api.llama.fi/protocol/compound-v2
+2025-03-13 22:34:34,047 - INFO - Fetching data from: https://api.llama.fi/summary/fees/compound-v2
+2025-03-13 22:34:34,786 - INFO - Fetching data for compound-v3
+2025-03-13 22:34:34,786 - INFO - Fetching data from: https://api.llama.fi/protocol/compound-v3
+2025-03-13 22:34:54,821 - INFO - Fetching data from: https://api.llama.fi/summary/fees/compound-v3
+2025-03-13 22:34:55,695 - ERROR - Error fetching /summary/fees/compound-v3: 404 Client Error: Not Found for url: https://api.llama.fi/summary/fees/compound-v3
+2025-03-13 22:34:55,696 - INFO - Fetching data for lido
+2025-03-13 22:34:55,697 - INFO - Fetching data from: https://api.llama.fi/protocol/lido
+2025-03-13 22:34:57,561 - INFO - Fetching data from: https://api.llama.fi/summary/fees/lido
+2025-03-13 22:34:57,991 - INFO - Fetching data for fluid
+2025-03-13 22:34:57,991 - INFO - Fetching data from: https://api.llama.fi/protocol/fluid
+2025-03-13 22:34:59,903 - INFO - Fetching data from: https://api.llama.fi/summary/fees/fluid
+2025-03-13 22:35:00,554 - INFO - Fetching data for fluid-lending
+2025-03-13 22:35:00,566 - INFO - Fetching data from: https://api.llama.fi/protocol/fluid-lending
+2025-03-13 22:35:00,984 - INFO - Fetching data from: https://api.llama.fi/summary/fees/fluid-lending
+2025-03-13 22:35:02,064 - INFO - Fetching data for jupiter
+2025-03-13 22:35:02,064 - INFO - Fetching data from: https://api.llama.fi/protocol/jupiter
+2025-03-13 22:35:02,460 - INFO - Fetching data from: https://api.llama.fi/summary/fees/jupiter
+2025-03-13 22:35:03,724 - INFO - Fetching data for jupiter-aggregator
+2025-03-13 22:35:03,724 - INFO - Fetching data from: https://api.llama.fi/protocol/jupiter-aggregator
+2025-03-13 22:35:15,517 - INFO - Fetching data from: https://api.llama.fi/summary/fees/jupiter-aggregator
+2025-03-13 22:35:15,974 - INFO - Fetching data for sonic
+2025-03-13 22:35:15,974 - INFO - Fetching data from: https://api.llama.fi/protocol/sonic
+2025-03-13 22:35:19,314 - INFO - Fetching data from: https://api.llama.fi/summary/fees/sonic
+2025-03-13 22:35:20,366 - INFO - Data successfully saved to data/raw/protocol_data.json
+2025-03-13 22:35:20,366 - INFO - Data collection completed successfully

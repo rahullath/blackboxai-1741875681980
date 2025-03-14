@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-03-13T17:08:44.955757",
+  "protocols": [
+    {
+      "name": "aave",
+      "displayName": "AAVE",
+      "symbol": "AAVE",
+      "chains": [],
+      "metrics": {
+        "tvl": 39246613038.01395,
+        "fees": 0.0,
+        "revenue": 0.0,
+        "marketCap": 2548466994.0959153,
+        "qoq_growth": 0.0
+      }
+    },
+    {
+      "name": "jupiter",
+      "displayName": "Jupiter",
+      "symbol": "JUP",
+      "chains": [],
+      "metrics": {
+        "tvl": 5407663370.520821,
+        "fees": 0.0,
+        "revenue": 0.0,
+        "marketCap": 1332848785.5795004,
+        "qoq_growth": 0.0
+      }
+    },
+    {
+      "name": "lido",
+      "displayName": "Lido",
+      "symbol": "LDO",
+      "chains": [
+        "Terra",
+        "Moonriver",
+        "Ethereum",
+        "Moonbeam",
+        "Solana"
+      ],
+      "metrics": {
+        "tvl": 19259636395.98383,
+        "fees": 0.0,
+        "revenue": 0.0,
+        "marketCap": 807483957.7185061,
+        "qoq_growth": 0.0
+      }
+    },
+    {
+      "name": "fluid",
+      "displayName": "Fluid",
+      "symbol": null,
+      "chains": [],
+      "metrics": {
+        "tvl": 5075011419.382299,
+        "fees": 0.0,
+        "revenue": 0.0,
+        "marketCap": 191911294.232866,
+        "qoq_growth": 0.0
+      }
+    },
+    {
+      "name": "compound",
+      "displayName": "Compound V1",
+      "symbol": "COMP",
+      "chains": [
+        "Ethereum"
+      ],
+      "metrics": {
+        "tvl": 7490321035.28646,
+        "fees": 0.0,
+        "revenue": 0.0,
+        "marketCap": 0.0,
+        "qoq_growth": 0.0
+      }
+    },
+    {
+      "name": "sonic",
+      "displayName": "Sonic",
+      "symbol": "SONIC",
+      "chains": [
+        "ICP"
+      ],
+      "metrics": {
+        "tvl": 1744012878.37539,
+        "fees": 0.0,
+        "revenue": 0.0,
+        "marketCap": 0.0,
+        "qoq_growth": 0.0
+      }
+    }
+  ]
+}
